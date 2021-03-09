@@ -1,26 +1,19 @@
 import React from 'react'
 import CompletedWorhCardItem from './CompletedWorhCardItem'
+import completedWorhCards from './completedWorhCards'
 
 const CompletedWorhCardList = () => {
     return (
         <>
             <div className="completedWorh-wrap">
-                <CompletedWorhCardItem 
-                    title="980"
-                    text="Project"
-                />
-                <CompletedWorhCardItem 
-                    title="520"
-                    text="Happy Client"
-                />
-                <CompletedWorhCardItem 
-                    title="330"
-                    text="Winners"
-                />
-                <CompletedWorhCardItem 
-                    title="120"
-                    text="Recoment"
-                />
+                {
+                    completedWorhCards.map((completedWorhCard) => (
+                        <CompletedWorhCardItem
+                            title={completedWorhCard.title}
+                            text={completedWorhCard.text}
+                        />
+                    ))
+                }
             </div>
         </>
     )
