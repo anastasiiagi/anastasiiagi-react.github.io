@@ -6,10 +6,8 @@ const CompletedWorhCardItem = ({
 }) => {
     return (
         <>
-            <div className="completedWorh-cart">
-                <h2 className="completedWorh-cart__title">{title}</h2>
-                <p className="completedWorh-cart__text">{text}</p>
-            </div>
+            <h2 className="completedWorh-cart__title">{title}</h2>
+            <p className="completedWorh-cart__text">{text}</p>    
         </>
     )
 }

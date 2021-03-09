@@ -7,11 +7,17 @@ const LetestNewsCardList = () => {
         <>
             <div className="letestNews-cards">
                 {
-                    letestNewsCards.map((letestNewsCard) => (
-                        <LetestNewsCardItem 
-                            title={letestNewsCard.title}
-                            text={letestNewsCard.text}
-                        />
+                    letestNewsCards.map(({
+                        id,
+                        title,
+                        text,
+                    }) => (
+                        <div className="letestNews-card" key={id}>
+                            <LetestNewsCardItem 
+                                title={title}
+                                text={text}
+                            />
+                        </div>
                     ))
                 }
                 

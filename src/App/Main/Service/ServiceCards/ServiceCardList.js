@@ -11,11 +11,17 @@ const ServiceCartList = () => {
         <>
             <div className="service-cards">
                 {
-                    serviceCards.map((serviceCard) => (
-                        <ServiceCartItem
-                            title={serviceCard.title}
-                            text={serviceCard.text}
-                        />
+                    serviceCards.map(({
+                        id,
+                        title,
+                        text,
+                    }) => (
+                        <div className="service-card" key={id}>
+                            <ServiceCartItem
+                                title={title}
+                                text={text}
+                            />
+                        </div>
                     )) 
                 }
             </div>

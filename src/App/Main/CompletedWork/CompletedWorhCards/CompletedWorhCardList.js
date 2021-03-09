@@ -7,11 +7,17 @@ const CompletedWorhCardList = () => {
         <>
             <div className="completedWorh-wrap">
                 {
-                    completedWorhCards.map((completedWorhCard) => (
-                        <CompletedWorhCardItem
-                            title={completedWorhCard.title}
-                            text={completedWorhCard.text}
-                        />
+                    completedWorhCards.map(({
+                        id,
+                        title,
+                        text,
+                    }) => (
+                        <div className="completedWorh-cart" key={id}>
+                            <CompletedWorhCardItem
+                                title={title}
+                                text={text}
+                            />
+                        </div>
                     ))
                 }
             </div>
