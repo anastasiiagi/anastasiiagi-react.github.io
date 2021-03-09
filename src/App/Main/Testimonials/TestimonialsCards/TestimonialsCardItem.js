@@ -1,6 +1,10 @@
 import React from 'react'
 
-const TestimonialsCardItem = (props) => {
+const TestimonialsCardItem = ({
+    name,
+    position,
+    text
+}) => {
     return (
         <>
             <div className="testimonials-card">
@@ -9,10 +13,10 @@ const TestimonialsCardItem = (props) => {
                 </div> */}
                 <div className="testimonials-card__wrap">
                     <div className="testimonials-card__title">
-                        <h6 className="testimonials-card__name">{props.name}<span className="service-card__position">{props.position}</span></h6>
+                        <h6 className="testimonials-card__name">{name}<span className="service-card__position">{position}</span></h6>
                         {/* <img className="testimonials-card__quotes" src={quotes} alt="quotes"/> */}
                     </div>
-                    <p className="testimonials-card__text">{props.text}</p>
+                    <p className="testimonials-card__text">{text}</p>
                 </div>
             </div>
         </>

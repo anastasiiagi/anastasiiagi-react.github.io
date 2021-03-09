@@ -1,11 +1,14 @@
 import React from 'react'
 
-const CompletedWorhCardItem = (props) => {
+const CompletedWorhCardItem = ({
+    title,
+    text
+}) => {
     return (
         <>
             <div className="completedWorh-cart">
-                <h2 className="completedWorh-cart__title">{props.title}</h2>
-                <p className="completedWorh-cart__text">{props.text}</p>
+                <h2 className="completedWorh-cart__title">{title}</h2>
+                <p className="completedWorh-cart__text">{text}</p>
             </div>
         </>
     )
