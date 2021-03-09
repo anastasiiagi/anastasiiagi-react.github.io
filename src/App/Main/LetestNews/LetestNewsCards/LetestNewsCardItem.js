@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const LetestNewsCardItem = ({
     title,
@@ -13,4 +14,10 @@ const LetestNewsCardItem = ({
         </>
     )
 }
+
+LetestNewsCardItem.propTypes = {
+    title: PropTypes.string,
+    text: PropTypes.string,
+}
+
 export default LetestNewsCardItem

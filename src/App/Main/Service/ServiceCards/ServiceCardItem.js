@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const ServiceCartItem = ({
     title,
@@ -15,6 +16,11 @@ const ServiceCartItem = ({
             </div>
         </>
     )
+}
+
+ServiceCartItem.propTypes = {
+    title: PropTypes.string,
+    text: PropTypes.string,
 }
 
 export default ServiceCartItem

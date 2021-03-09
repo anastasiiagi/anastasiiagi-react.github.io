@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const TestimonialsCardItem = ({
     name,
@@ -19,6 +20,12 @@ const TestimonialsCardItem = ({
             </div>
         </>
     )
+}
+
+TestimonialsCardItem.propTypes = {
+    name: PropTypes.string,
+    position: PropTypes.string,
+    text: PropTypes.string,
 }
 
 export default TestimonialsCardItem
