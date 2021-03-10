@@ -1,6 +1,4 @@
 import React from 'react'
-import foto1 from './foto1.png'
-import foto2 from './foto2.png'
 import LetestNewsCardList from './LetestNewsCards/LetestNewsCardList'
 import LetestNewsTitles from './LetestNewsTitles/LetestNewsTitles'
 

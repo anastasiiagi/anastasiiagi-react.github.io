@@ -1,5 +1,5 @@
 import React from 'react'
-import points from './points.jpg'
+import points from './points.png'
 
 const ModernInteriorPoints = () => {
     return (

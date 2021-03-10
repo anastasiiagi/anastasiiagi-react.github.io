@@ -11,17 +11,17 @@ const LetestNewsCardList = () => {
                         id,
                         title,
                         text,
+                        image
                     }) => (
                         <div className="letestNews-card" key={id}>
                             <LetestNewsCardItem 
                                 title={title}
                                 text={text}
+                                image={image}
                             />
                         </div>
                     ))
                 }
-                
-                {/* <img className="picture letestNews__img" src={foto2} alt="img"/> */}
             </div>
         </>
     )

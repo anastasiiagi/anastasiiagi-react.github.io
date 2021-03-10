@@ -3,11 +3,12 @@ import PropTypes from 'prop-types'
 
 const LetestNewsCardItem = ({
     title,
-    text
+    text,
+    image
 }) => {
     return (
         <>
-            {/* <img className="picture letestNews__img" src={foto1} alt="img"/> */}
+            <img className="picture letestNews__img" src={image} alt="img"/>
             <h3 className="letestNews__title">{title}</h3>
             <p className="letestNews__text">{text}</p>
             <button className="button button-big letestNews__button">Continue Readinc....</button>
