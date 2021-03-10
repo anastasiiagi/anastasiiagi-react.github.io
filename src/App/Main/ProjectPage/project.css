@@ -1,0 +1,39 @@
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.project-picture {
+  margin-right: 50px;
+}
+
+.project-picture__img {
+  width: 800px;
+}
+
+.project__title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+  margin-top: 0px;
+  margin-bottom: 23px;
+  color: #212121;
+  margin: 0px;
+}
+
+.project__text {
+  margin-top: 0px;
+  margin-bottom: 28px;
+  margin-right: 44px;
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #646464;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}

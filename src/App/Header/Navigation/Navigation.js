@@ -1,17 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navigation = () => {
     return (
         <>
             <nav className="header-navigation">
                 <ul className="header-menu">
-                    <li className="header-menu__item"><a className="header-menu__link" href="/">Home</a></li>
-                    <li className="header-menu__item"><a className="header-menu__link" href="/">Project</a></li>
-                    <li className="header-menu__item"><a className="header-menu__link" href="/">Services</a></li>
-                    <li className="header-menu__item"><a className="header-menu__link" href="/">About</a></li>
-                    <li className="header-menu__item"><a className="header-menu__link" href="/">Blog</a></li>
-                    <li className="header-menu__item"><a className="header-menu__link" href="/">Shop</a></li>
-                    <li className="header-menu__item"><a className="header-menu__link" href="/">Contact</a></li>
+                    <li className="header-menu__item"><Link className="header-menu__link" to="/">Home</Link></li>
+                    <li className="header-menu__item"><Link className="header-menu__link" to="/project">Project</Link></li>
+                    <li className="header-menu__item"><Link className="header-menu__link" to="/services">Services</Link></li>
+                    <li className="header-menu__item"><Link className="header-menu__link" to="/aboutUs">About</Link></li>
+                    <li className="header-menu__item"><Link className="header-menu__link" to="/blog">Blog</Link></li>
+                    <li className="header-menu__item"><Link className="header-menu__link" to="/shop">Shop</Link></li>
+                    <li className="header-menu__item"><Link className="header-menu__link" to="/">Contact</Link></li>
                 </ul>
             </nav>
         </>

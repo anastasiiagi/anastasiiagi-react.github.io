@@ -1,5 +1,13 @@
 import React from 'react'
+
 import AboutUs from './AboutUs/AboutUs'
+import ProjectPage from './ProjectPage/ProjectPage'
+import ServicesPage from './ServicesPage/ServicesPage'
+import AboutUsPage from './AboutUsPage/AboutUsPage'
+import BlogPage from './BlogPage/BlogPage'
+import ShopPage from './ShopPage/ShopPage'
+import { Route } from 'react-router-dom'
+
 import CompletedWork from './CompletedWork/CompletedWork'
 import HowMuchWorking from './HowMuchWorking/HowMuchWorking'
 import LetestNews from './LetestNews/LetestNews'
@@ -12,14 +20,30 @@ const Main = () => {
     return (
         <>
             <main className="main main-conteiner">
-                <ModernInterior/>
+                {/* <ModernInterior/>
                 <Service/>
-                <AboutUs/>
+                <AboutUs />
                 <HowMuchWorking/>
                 <CompletedWork/>
                 <Testimonials/>
                 <LetestNews />
-                <SingUs/>
+                <SingUs/> */}
+
+                <Route path="/" exact render={() => <ModernInterior />} />
+                <Route path="/" exact render={() => <Service />} />
+                <Route path="/" exact render={() => <AboutUs />} />
+                <Route path="/" exact render={() => <HowMuchWorking />} />
+                <Route path="/" exact render={() => <CompletedWork />} />
+                <Route path="/" exact render={() => <Testimonials />} />
+                <Route path="/" exact render={() => <LetestNews />} />
+                <Route path="/" exact render={() => <SingUs />} />
+
+                <Route path="/project" component={ProjectPage} />
+                <Route path="/services" component={ServicesPage} />
+                <Route path="/aboutUs" component={AboutUsPage} />
+                <Route path="/blog" component={BlogPage} />
+                <Route path="/shop" component={ShopPage} />
+                
             </main>
         </>
     )
