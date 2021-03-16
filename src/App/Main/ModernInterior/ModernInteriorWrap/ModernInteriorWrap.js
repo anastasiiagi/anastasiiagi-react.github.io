@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ModernInteriorWrap = () => {
     return (
@@ -9,7 +10,7 @@ const ModernInteriorWrap = () => {
                 <p className="modernInterior__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                     veniam, quis nostrud exercitation.</p>
-                <button className="button modernInterior__button">Contact</button>
+                <Link to="/contact"><button className="button modernInterior__button">Contact</button></Link>
             </div>
         </>
     )

@@ -12,7 +12,7 @@ const Navigation = () => {
                     <li className="header-menu__item"><Link className="header-menu__link" to="/aboutUs">About</Link></li>
                     <li className="header-menu__item"><Link className="header-menu__link" to="/blog">Blog</Link></li>
                     <li className="header-menu__item"><Link className="header-menu__link" to="/shop">Shop</Link></li>
-                    <li className="header-menu__item"><Link className="header-menu__link" to="/">Contact</Link></li>
+                    <li className="header-menu__item"><Link className="header-menu__link" to="/contact">Contact</Link></li>
                 </ul>
             </nav>
         </>

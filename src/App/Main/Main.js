@@ -6,6 +6,7 @@ import ServicesPage from './ServicesPage/ServicesPage'
 import AboutUsPage from './AboutUsPage/AboutUsPage'
 import BlogPage from './BlogPage/BlogPage'
 import ShopPage from './ShopPage/ShopPage'
+import ContactPage from './ContactPage/ContactPage'
 import { Route } from 'react-router-dom'
 
 import CompletedWork from './CompletedWork/CompletedWork'
@@ -15,6 +16,7 @@ import ModernInterior from './ModernInterior/ModernInterior'
 import Service from './Service/Service'
 import SingUs from './SingUs/SingUs'
 import Testimonials from './Testimonials/Testimonials'
+import SuccessfulPage from './SuccessfulPage/SuccessfulPage'
 
 const Main = () => {
     return (
@@ -43,6 +45,8 @@ const Main = () => {
                 <Route path="/aboutUs" component={AboutUsPage} />
                 <Route path="/blog" component={BlogPage} />
                 <Route path="/shop" component={ShopPage} />
+                <Route path="/contact" component={ContactPage} />
+                <Route path="/successful" component={SuccessfulPage} />
                 
             </main>
         </>

@@ -1,5 +1,5 @@
 import React from 'react'
-// import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 const AboutUsWrap = () => {
     return (
@@ -15,8 +15,7 @@ const AboutUsWrap = () => {
                     All the Lorem Ipsum generators on the Internettend to repeat
                     predefined chunks as necessary,making this the first true
                     generator on the Internet.</p>
-                {/* <Link to='/aboutAs'><button className="button aboutUs__button">Learn more</button></Link> */}
-                <button className="button aboutUs__button">Learn more</button>
+                <Link to='/aboutUs'><button className="button aboutUs__button">Learn more</button></Link>
             </div>
         </>
     )
