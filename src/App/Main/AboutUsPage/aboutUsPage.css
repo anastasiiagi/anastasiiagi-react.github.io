@@ -1,0 +1,18 @@
+.aboutUsPage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  margin: 0 auto;
+  max-width: 1346px;
+  width: 100%;
+}
+
+.aboutUsPage__wrap {
+  margin: 0px 50px;
+}
+
+.aboutUsPage__picture {
+  width: 50%;
+}

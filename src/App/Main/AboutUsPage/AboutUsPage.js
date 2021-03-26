@@ -1,5 +1,6 @@
 import React from 'react'
 import studio from './studio.jpg'
+import './aboutUsPage.css'
 
 const AboutUsPage = () => {
     return (

@@ -1,0 +1,19 @@
+.blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  margin: 0 auto;
+  max-width: 1346px;
+  width: 100%;
+}
+
+.blog__wrap {
+  margin: 0px 40px;
+}
+
+.blog-img {
+  height: 300px;
+  width: 500px;
+}

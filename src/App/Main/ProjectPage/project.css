@@ -4,6 +4,9 @@
   align-items: flex-start;
   padding-top: 100px;
   padding-bottom: 50px;
+  margin: 0 auto;
+  max-width: 1346px;
+  width: 100%;
 }
 
 .project-picture {
