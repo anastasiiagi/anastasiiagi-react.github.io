@@ -5,7 +5,7 @@ import arrowForth from './arrowForth.png'
 const Switching = () => {
     return (
         <>
-            <div className="switching">
+            <div className="switching service-switching">
                 <div className="forth">
                     <img className="arrow-forth__img" src={arrowBack} alt="arrow-forth"/>
                 </div>

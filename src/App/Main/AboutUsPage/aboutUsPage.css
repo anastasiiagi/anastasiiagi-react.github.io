@@ -14,5 +14,26 @@
 }
 
 .aboutUsPage__picture {
-  width: 50%;
+  width: 700px;
+  height: 400px;
+}
+
+@media (max-width: 800px) {
+  .aboutUsPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .aboutUsPage__picture {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutUsPage__picture {
+    width: 200px;
+    height: 150px;
+  }
 }

@@ -17,3 +17,18 @@
   height: 300px;
   width: 500px;
 }
+
+@media (max-width: 815px) {
+  .blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 525px) {
+  .blog-img {
+    height: 200px;
+    width: 300px;
+  }
+}
